@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <meta charset="utf-8" />
@@ -45,6 +45,39 @@
     <!-- </nav> -->
     <!--end nav-->
 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-profile">
+        <div class="container">
+            <div class="row">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#profile_ripple">Header<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#AboutUs">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Education&Skills">Education & Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Works">Works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Contact">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--end nav-->
+
     <div class="main-wraper">
         <section class="section bg-profile" id="profile_ripple">
             <div class="zoo-profile">
@@ -64,8 +97,8 @@
                                     <p class="cd-headline loading-bar">
                                         <span class="cd-words-wrapper">
                                             <b class="is-visible">React Developer</b>
-                                            <!-- <b>Angular Developer</b>
-                                                <b>React Native Developer</b> -->
+                                            <b>Computer Engineer</b>
+                                            <!-- <b>React Native Developer</b> -->
                                         </span>
                                     </p>
                                 </div>
@@ -110,7 +143,7 @@
         </section>
         <!--end section-->
 
-        <section class="section-md">
+        <section class="section-md" id="AboutUs">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -163,7 +196,7 @@
         </section>
         <!--end section-->
 
-        <section class="section-md">
+        <section class="section-md" id="Education&Skills">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -339,7 +372,7 @@
         <!-- </section> -->
         <!--end section-->
 
-        <section class="section-md my-work">
+        <section class="section-md my-work" id="Works">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -357,7 +390,7 @@
                                     <div class="carousel-item">
                                         <div class="text-center">
                                             <p class="px-4">
-                                               I used tailwindcss for developing this project.
+                                                I used tailwindcss for developing this project.
                                             </p>
                                             <div>
                                                 <!-- <img src="images/users/user-10.jpg" alt=""
@@ -371,13 +404,14 @@
                                     <div class="carousel-item active">
                                         <div class="text-center">
                                             <p class="px-4">
-                                                This is the main project of MaadCo and I got acquainted with test and Devextreme,
+                                                This is the main project of MaadCo and I got acquainted with test and
+                                                Devextreme,
                                                 and I also researched about push notification and PWA.
                                             </p>
                                             <div>
                                                 <!-- <img src="images/users/user-5.jpg" alt=""
                                                     class="rounded-circle thumb-md mb-2"> -->
-                                                <p class="mb-0 text-primary"><b>NAP</b></p>
+                                                <p class="mb-0 text-primary"><b>Nafun Automation Portal</b></p>
                                                 <!-- <small class="text-muted">CEO Facebook</small> -->
                                             </div>
                                         </div>
@@ -400,30 +434,30 @@
                                     <!--end carousel-item--s>
                                 </div>
                                 <!--end carousel-inner-->
+                                </div>
+                                <!--end carousel-->
                             </div>
-                            <!--end carousel-->
+                            <!--end /div-->
                         </div>
-                        <!--end /div-->
-                    </div>
-                    <!--end col-->
+                        <!--end col-->
 
-                    <!-- <div class="col-sm-6">
+                        <!-- <div class="col-sm-6">
                         <div class="row">
                             <div class="col-12">
                                 <div class="row">
                                     <ul class="col container-filter categories-filter mb-4" id="filter"> -->
-                    <!-- <li><a class="categories active" data-filter="*">All</a></li> -->
-                    <!-- <li><a class="categories" data-filter=".design">UI/UX Design</a></li> -->
-                    <!-- <li><a class="categories" data-filter=".frontend">Frontend</a></li> -->
-                    <!-- <li><a class="categories" data-filter=".backend">Backend</a></li> -->
-                    <!-- </ul> -->
-                    <!--end col-->
-                    <!-- </div> -->
-                    <!-- End portfolio  -->
+                        <!-- <li><a class="categories active" data-filter="*">All</a></li> -->
+                        <!-- <li><a class="categories" data-filter=".design">UI/UX Design</a></li> -->
+                        <!-- <li><a class="categories" data-filter=".frontend">Frontend</a></li> -->
+                        <!-- <li><a class="categories" data-filter=".backend">Backend</a></li> -->
+                        <!-- </ul> -->
+                        <!--end col-->
+                        <!-- </div> -->
+                        <!-- End portfolio  -->
 
-                    <!-- <div class="row container-grid nf-col-3  projects-wrapper">
+                        <!-- <div class="row container-grid nf-col-3  projects-wrapper">
                                     <div class="col-md-4 col-6 p-0 nf-item design"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/1.jpg"
                                                 title="Apple">
                                                 <img class="item-container " src="images/portfolio/1.jpg" alt="7" />
@@ -435,12 +469,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item backend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item backend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/2.jpg"
                                                 title="Samsung">
                                                 <img class="item-container mfp-fade" src="images/portfolio/2.jpg"
@@ -453,12 +487,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/1.jpg"
                                                 title="Facebook">
                                                 <img class="item-container" src="images/portfolio/1.jpg" alt="4" />
@@ -470,12 +504,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/2.jpg"
                                                 title="Facebook">
                                                 <img class="item-container" src="images/portfolio/2.jpg" alt="4" />
@@ -487,12 +521,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/3.jpg"
                                                 title="Facebook">
                                                 <img class="item-container" src="images/portfolio/3.jpg" alt="4" />
@@ -504,12 +538,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item design frontend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/5.jpg"
                                                 title="WhatsApp">
                                                 <img class="item-container" src="images/portfolio/5.jpg" alt="5" />
@@ -521,12 +555,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item  design"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item  design"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/6.jpg"
                                                 title="Nokia">
                                                 <img class="item-container" src="images/portfolio/6.jpg" alt="6" />
@@ -538,12 +572,12 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
 
-                    <!-- <div class="col-md-4 col-6 p-0 nf-item backend frontend"> -->
-                    <!-- <div class="item-box">
+                        <!-- <div class="col-md-4 col-6 p-0 nf-item backend frontend"> -->
+                        <!-- <div class="item-box">
                                             <a class="cbox-gallary1 mfp-image" href="images/portfolio/4.jpg"
                                                 title="Oppo">
                                                 <img class="item-container" src="images/portfolio/4.jpg" alt="1" />
@@ -555,21 +589,21 @@
                                                 </div>
                                             </a>
                                         </div> -->
-                    <!--end item-box-->
-                    <!-- </div> -->
-                    <!--end col-->
-                    <!-- </div> -->
+                        <!--end item-box-->
+                        <!-- </div> -->
+                        <!--end col-->
+                        <!-- </div> -->
+                        <!--end row-->
+                        <!-- </div> -->
+                        <!--end col-->
+                        <!-- </div> -->
+                        <!--end row-->
+                        <!-- </div> -->
+                        <!--end col-->
+                    </div>
                     <!--end row-->
-                    <!-- </div> -->
-                    <!--end col-->
-                    <!-- </div> -->
-                    <!--end row-->
-                    <!-- </div> -->
-                    <!--end col-->
                 </div>
-                <!--end row-->
-            </div>
-            <!--end container-->
+                <!--end container-->
         </section>
         <!--end section-->
 
@@ -579,31 +613,31 @@
                     <div class="col-md-2 col-6">
                         <img src="images/brand/1.png" alt="" class="img-fluid ">
                     </div> -->
-                    <!--end col-->
-                    <!-- <div class="col-md-2 col-6">
+        <!--end col-->
+        <!-- <div class="col-md-2 col-6">
                         <img src="images/brand/2.png" alt="" class="img-fluid ">
                     </div> -->
-                    <!--end col-->
-                    <!-- <div class="col-md-2 col-6">
+        <!--end col-->
+        <!-- <div class="col-md-2 col-6">
                         <img src="images/brand/3.png" alt="" class="img-fluid ">
                     </div> -->
-                    <!--end col-->
-                    <!-- <div class="col-md-2 col-6">
+        <!--end col-->
+        <!-- <div class="col-md-2 col-6">
                         <img src="images/brand/4.png" alt="" class="img-fluid ">
                     </div> -->
-                    <!--end col-->
-                    <!-- <div class="col-md-2 col-6">
+        <!--end col-->
+        <!-- <div class="col-md-2 col-6">
                         <img src="images/brand/5.png" alt="" class="img-fluid ">
                     </div> -->
-                    <!--end col-->
-                <!-- </div> -->
-                <!--end row-->
-            <!-- </div> -->
-            <!--end container-->
+        <!--end col-->
+        <!-- </div> -->
+        <!--end row-->
+        <!-- </div> -->
+        <!--end container-->
         <!-- </section> -->
         <!--end section-->
 
-        <section class="section-md contact-form">
+        <section class="section-md contact-form" id="Contact">
             <div class="container">
                 <div class="row">
                     <div class="col-12 mb-3">
@@ -706,11 +740,11 @@
                     <div class="col-sm-12 text-center">
                         <p class="copyright mb-0 py-4">© 2019. Design By Mannat-Theme</p>
                     </div> -->
-                    <!--end col-->
-                <!-- </div> -->
-                <!--end row-->
-            <!-- </div> -->
-            <!--end container-->
+        <!--end col-->
+        <!-- </div> -->
+        <!--end row-->
+        <!-- </div> -->
+        <!--end container-->
         <!-- </footer> -->
         <!--end footer-area-->
     </div>
