@@ -19,6 +19,9 @@
     <link href="css/icons.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
 
+    <!-- toastify -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
 </head>
 
 <body>
@@ -833,8 +836,8 @@
                                     </div>
                                     <!--end col-->
                                     <div class="form-group col-md-12">
-                                        <input type="submit" value="Send" onclick="sendEmail()" value="Submit now" name="submit"
-                                            id="submit" class="btn btn-primary px-5 py-2">
+                                        <input type="submit" value="Send" onclick="sendEmail()" value="Submit now"
+                                            name="submit" id="submit" class="btn btn-primary px-5 py-2">
                                         <div id="simple-msg"></div>
                                     </div>
                                     <!--end col-->
@@ -883,6 +886,9 @@
     </div>
     <!--end main-wraper-->
 
+    <!-- toastify -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
     <!-- emailjs -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -902,8 +908,36 @@
                 emailjs.sendForm('contact_service', 'contact_form', this)
                     .then(function () {
                         console.log('SUCCESS!');
+                        Toastify({
+                            text: "Your message has been sent, thank you :)",
+                            duration: 3000,
+                            destination: "https://github.com/apvarun/toastify-js",
+                            newWindow: true,
+                            close: true,
+                            gravity: "bottom", // `top` or `bottom`
+                            position: "right", // `left`, `center` or `right`
+                            stopOnFocus: true, // Prevents dismissing of toast on hover
+                            style: {
+                                background: "#1c2d41",
+                            },
+                            onClick: function () { } // Callback after click
+                        }).showToast();
                     }, function (error) {
                         console.log('FAILED...', error);
+                        Toastify({
+                            text: "Unfortunately, a problem has occurred :(",
+                            duration: 3000,
+                            destination: "https://github.com/apvarun/toastify-js",
+                            newWindow: true,
+                            close: true,
+                            gravity: "bottom", // `top` or `bottom`
+                            position: "right", // `left`, `center` or `right`
+                            stopOnFocus: true, // Prevents dismissing of toast on hover
+                            style: {
+                                background: "#f1646c",
+                            },
+                            onClick: function () { } // Callback after click
+                        }).showToast();
                     });
             });
         }
