@@ -1,31 +1,3 @@
-import emailjs from 'emailjs-com'
-import apiKeys from './apikeys'
-
-//#region emailjs
-
-const sendEmail = e => {
-
-    console.log("sendEmail")
-
-    var templateParams = {
-        name: document.getElementById('name'),
-        email: document.getElementById('email'),
-        message: document.getElementById('comments')
-    };
-
-    emailjs.send('service_5qvzice', 'template_c84rg0l', templateParams)
-        .then(function (response) {
-            console.log('SUCCESS!', response.status, response.text);
-        }, function (error) {
-            console.log('FAILED...', error);
-        });
-
-        emailjs.sendForm("service_5qvzice", "template_c84rg0l", '#contact-form', "AQk7ron-oeEse7Lso");
-
-}
-
-//#endregion
-
 /* Theme Name: Zoovara - Personal Template
    Author: Mannat-themes
    Version: 1.0.0
